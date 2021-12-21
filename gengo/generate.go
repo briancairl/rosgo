@@ -10,9 +10,7 @@ var msgTemplate = `
 package {{ .Package }}
 import (
     "bytes"
-{{- if .BinaryRequired }}
     "encoding/binary"
-{{- end }}
 {{- range .Imports }}
 	"{{ . }}"
 {{- end }}
